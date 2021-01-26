@@ -17,6 +17,7 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'dracula/vim'
 Plug 'vim-syntastic/syntastic'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'asins/vimcdoc'
 Plug 'vim-airline/vim-airline'
@@ -29,7 +30,6 @@ call plug#end()
 
 filetype plugin indent on
 
-let g:vim_markdown_folding_disabled=1
 set hlsearch
 set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
@@ -101,7 +101,10 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 
 " md is markdown
-autocmd BufRead,BufNewFile *.md set filetype=markdown
+" autocmd BufRead,BufNewFile *.md set filetype=markdown
+"au BufNewFile,BufRead *.md setf markdown
+au! BufRead,BufNewFile *.markdown set filetype=mkd
+au! BufRead,BufNewFile *.md       set filetype=mkd
 
 au BufNewFile,BufRead *.rs
       \ set tabstop=2 |
