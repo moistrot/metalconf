@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdcommenter'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
