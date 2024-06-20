@@ -119,7 +119,7 @@ if has("gui_running")
   color dracula
   set go=aAce              " 去掉难看的工具栏和滑动条
   set transparency=10      " 透明背景
-  set guifont=Monaco:h14   " 设置默认字体为monaco
+  set guifont=Hack\ Nerd\ Font:h16   " 设置默认字体为Hack Nerd 配合airline
   set showtabline=2        " 开启自带的tab栏
   set columns=180          " 设置宽
   set lines=50             " 设置长
@@ -169,6 +169,7 @@ set helplang=cn
 let NERDTreeIgnore=['\.pyc$', '\~$', '\.class'] "ignore files in NERDTree
 let g:NERDTreeWinSize = 30
 let g:NERDTreeMouseMode = 1
+let g:airline_powerline_fonts = 1
 " let g:NERDTreeMapToggleZoom = '<Space>'
 let g:nerdtree_tabs_open_on_gui_startup = 0
 let g:nerdtree_tabs_open_on_console_startup = 0
@@ -207,4 +208,3 @@ let g:rustfmt_autosave = 1
 
 let g:jedi#rename_command = "<leader>u"
 let g:jedi#popup_on_dot = 0
-
